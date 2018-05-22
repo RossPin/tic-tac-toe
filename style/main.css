@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(240,240,255);
+}
+
+#row0, #row1 {
+  border-bottom: 4px solid black;
+}
+
+.col0, .col1 {
+  border-right: 4px solid black;
+}
+
+.options {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.resetBtn {  
+  display: none;
+}
+
+.board {
+  margin-top: 10px;
+  background-color: rgb(240,240,200);
+  width: 320px;
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 72px;  
+  visibility: hidden;
+}
+
+#row0, #row1, #row2 {
+  height: 100px;
+  line-height: 100px;
+}
+
+#status {
+  text-align: center;  
+}
+
+@media only screen and (min-height: 500px) {
+  .options {  
+  margin-top: calc((100vh - 500px) / 2);
+}
+  .board {
+    margin-top: 50px;
+  }
+} 

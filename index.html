@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/ticTacToe.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-6 options">
+          <div id="instruction">Select your Gamepiece</div>
+          <button class="btn selectBtn" onclick="set('X','O')">X</button>
+          <button class="btn selectBtn" onclick="set('O','X')">O</button>
+          <button class="btn resetBtn" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="board">
+        <div class="row" id="row0">
+          <div class="col-4 col0"></div>
+          <div class="col-4 col1"></div>
+          <div class="col-4 col2"></div>
+        </div>
+        <div class="row" id="row1">
+          <div class="col-4 col0"></div>
+          <div class="col-4 col1"></div>
+          <div class="col-4 col2"></div>
+        </div>
+        <div class="row" id="row2">
+          <div class="col-4 col0"></div>
+          <div class="col-4 col1"></div>
+          <div class="col-4 col2"></div>
+        </div>    
+      </div>
+      <h1 id="status"></h1>
+    </div>
+</body>
+</html>
